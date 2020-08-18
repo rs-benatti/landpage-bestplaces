@@ -1,0 +1,749 @@
+@font-face{
+    font-family: 'Nexa Bold';
+    src: url("/fonts/nexa-bold.otf");
+}
+@font-face{
+    font-family: 'Nexa Light';
+    src: url("/fonts/nexa-light.otf");
+}
+body{
+    background-color: #1a1a1a;
+    align-content: center;
+}
+.nav-link{
+    font-family: 'Nexa Light';
+    font-weight: 700;
+    font-size: xx-large;
+    color: #ffffff;
+}
+#imagemBP{
+    margin-top: -20px; /*Comentar isso com Tito*/
+}
+
+nav{
+    margin-top: 50px;
+    /*margin-left: -50px;*/
+}
+
+.modal-title{
+    font-family: 'Nexa Bold';
+    font-size: 2.0em;
+    color: #1055A9;
+    font-weight: bolder;
+}
+
+#manchete{
+    margin-top: 60px;
+    text-align: center;
+}
+.textoVerde{
+    font-family: 'Nexa Bold';
+    font-size: 4.5em;
+    color: #57c478;
+    font-weight: bolder;
+}
+.textoAzul{
+    font-family: 'Nexa Bold';
+    font-size: 4.5em;
+    color: #1055A9;
+    font-weight: bolder;
+}
+.textoBranco{
+    font-family: 'Nexa Bold';
+    color: #ffffff;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: -20px; /*Comentar isso com Tito*/
+}
+.textoCinza{
+    font-family: 'Nexa Light';
+    color: #999999;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+#botaoFaleConosco{
+    font-family: 'Nexa Light';
+    width: 200px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right, #4cc06f, #16963c);
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 30px;
+    border-color: #000000;
+}
+
+.background1{
+    background-image: url("../img/Imagem 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 67vw;
+    background-position: center;
+    display: block;
+    min-height: 1000px; /*Aumentar pra telas maiores*/
+}
+
+.textBackground1{ /* Center text */
+  margin: auto;
+  width: 1000px;
+}
+#textoBackground{
+    padding-top: 60vh; margin-left: -100px; line-height: 90px;
+}
+#duvidas{
+    margin-top: -9px;
+    width: 50px;
+    height: 50px;
+    background-color: #323232;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 10px;
+    border-color: #000000;
+}
+
+.btn{
+    font-family: 'Nexa Light';
+    width: 200px;
+    height: 60px;
+    margin-top: -10px;
+    background-image: linear-gradient(to right, #0569e2, #12519E);
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: bolder;
+    border-radius: 30px;
+}
+
+.btn-modal{
+    border-radius: 1px;
+    margin-top: 0px;
+    height: 40px;
+    width: 100px;
+    background-color: #1055A9;
+    color: #ffffff;
+}
+
+.btn-branco{
+    font-family: 'Nexa Light';
+    width: 300px;
+    height: 60px;
+    margin-top: -10px;
+    background-image: linear-gradient(to right, #ffffff, #ffffff);
+    color: #12519E;
+    font-size: 0.9em;
+    font-weight: bolder;
+    border-radius: 30px;
+}
+
+.btn-branco:hover, .btn-branco:focus {
+    color: #12519E;
+    outline: 0;
+}
+.btn-normal:hover, .btn-normal:focus {
+    color: #fff;
+    outline: 0;
+}
+
+.first {
+    transition: all .2s ease-in-out;
+}
+.first:hover {
+    transform: scale(1.1);
+}
+.btn-colorido {
+    transition: all .2s ease-in-out;
+}
+.btn-colorido:hover {
+    box-shadow: 0 0 40px 40px #0569e2 inset;
+    transform: scale(1.1);
+}
+.atual{
+    font-family: "Nexa Bold";
+    margin-top: -3px;
+    text-decoration: underline;
+}
+.container{
+    margin-top: 75px;
+}
+
+.container-no-margin{
+    margin-top: -75px;
+}
+
+.img-fluid{
+    height: 700px;
+}
+
+.modal-footer .btn-modal{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.bloco-form{
+    height: 700px;
+    background-color: #fff;
+    width: 90vw;
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'b11 b12';
+    margin-top: -200px;
+}
+
+.img-form{
+    grid-area: b12;
+    height: 100%;
+}
+
+.form-grid{
+    grid-area: b11;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-title{
+    font-size: 0.5em;
+    margin-top: 50px;
+}
+
+.form-body{
+    background-color: #1a1a1a;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control-lg{
+    height: 70px;
+    margin: 5px 0px;
+}
+
+.form-body .form-grid .col-3{
+    margin-left: -20px;
+}
+
+.form-grid label{
+    font-size: 2em;
+}
+
+.col-3 .mobile-form{
+    height: 70px;
+}
+
+/* --------------FORM 3 --------------*/
+.form3-body{
+    width: 100vw;
+    height: 100%;
+    background-color: #fff;
+}
+
+.form3-body h6{
+    margin-top: 50px;
+}
+
+.form3-body .row:nth-child(2){
+    margin-top: 60px;
+}
+
+.form3-body label{
+    font-size: 2em;
+}
+
+.form3-body .form-group{
+    padding: 20px;
+}
+
+.form3-body .form-background{
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 900px;
+    margin-top: 100px;
+    background-image: url("../img/Imagem 14.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form3-body .mobile-form{
+    width: 90%;
+}
+
+/*---------------FIM FORM 3---------------*/
+
+
+/*---------------GRID MODAL ---------------*/
+
+.modal-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'c11 c12';
+}
+
+.c11{
+    grid-area: c11;
+}
+
+.c12{
+    grid-area: c12;
+}
+
+.img-modal-pc{
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.modal-content{
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 15px !important;
+}
+/*-------------FIM DO GRID MODAL------------*/
+
+@media (min-width: 1281px) {
+.btn-flip {
+    opacity: 1;
+    color: #fff;
+  }
+
+.img-check{
+    margin-top: -10px;
+}
+  .btn-flip:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+  .btn-flip:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+  }
+  .btn-flip:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: #1a1a1a;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+    font-family: 'Nexa Light';
+    color: #ffffff;
+    font-size: 0.8em;
+    font-weight: 300;
+    margin-left: 50px;
+    margin-top: 70px;
+  }
+  .esquerda:after {
+    margin-left: -20px;
+  }
+
+  .btn-texto:before {
+    font-family: 'Nexa Light';
+    width: 200px;
+    height: 200px;
+    background-color: #1a1a1a;
+    color: #57c478;
+    font-size: 1.8em;
+    content: "Passe o mouse sobre os textos para saber mais!";
+    font-weight: bolder;
+    border-width: 0px;
+    -webkit-appearance: none;
+    outline: none;
+  }
+
+  .textoPequeno:after {
+    margin-top: 130px;
+  }
+
+  .textoQuebrado:after {
+    white-space: pre;
+    margin-top: 20px;
+  }
+
+  .btn-flip:before {
+    white-space: pre;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    display: block;
+    transition: 0.5s;
+    position: relative;
+    background: #1a1a1a;
+    line-height: 60px;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+    margin-top: 110px;
+    font-size: 1.2em;
+  }
+
+  .tituloPequeno:before {
+    margin-top: 140px;
+  }
+}
+  .caixaCatalogo {
+    height: 500px;
+    width: 1000px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 150px;
+    transform: rotate(10deg);
+  }
+
+  .background2{
+    background-image: url('../img/Imagem 8.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 67vw;
+    background-position: center;
+    min-height: 1000px; /*Aumentar pra telas maiores*/
+  }
+
+  .itemList{
+    background-color: #e6e6e6;
+    height: 55px;
+    width: 90%;
+    margin:auto;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+
+  .catalogoCheck{
+    padding-left: 840px;
+    margin-top: -70px;
+    position: relative;
+  }
+
+  .check{
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 30%;
+    vertical-align: middle;
+    border: 1px solid #535151;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .check:checked{
+    background-color: #0569e2;
+  }
+
+  .textItem{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 2em;
+    font-family: 'Nexa Light'
+  }
+
+  #cartaoAzul {
+    height: 500px;
+    width: 1000px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 150px;
+    transform: rotate(-10deg);
+    background-color: #044ea8;
+  }
+
+  .texto-botao-ancora{
+    margin-top: 6px;
+}
+.card-btn{
+    font-family: 'Nexa Bold';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #4cc06f, #16963c);
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: bolder;
+    border-radius: 15px;
+}
+
+
+  .btn-texto-custom{
+    display: inline-block;
+    font-family: 'Nexa Bold';
+    width: 500px;
+    height: 200px;
+    background-color: #1a1a1a;
+    color: #57c478;
+    font-weight: bolder;
+    border-width: 0px;
+    font-size: 2.5em;
+    -webkit-appearance: none;
+    outline: none;
+    text-align: start;
+  }
+
+  .btn-catalogo{
+    margin-top: 30px;
+    padding-left: 750px;
+  }
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .background1{
+      background-image: url('../img/Imagem 1.png');
+      background-repeat: no-repeat;
+      width: 100%;
+      background-position: center;
+      display: block;
+      margin: auto;
+      min-height: 1000px; /*Aumentar pra telas maiores*/
+  }
+  .card{
+      margin-top: 200px;
+  }
+  .blockquote-text{
+    padding-left: 100px;
+  }
+  .card-subtitle{
+    color: #fff;
+    font-size: 2.5em;
+  }
+  .card-text{
+    color: #fff;
+    font-size: 2.5em;
+  }
+  .card-btn{
+    font-family: 'Nexa Bold';
+    width: 100%;
+    height: 75px;
+    background-image: linear-gradient(to right, #4cc06f, #16963c);
+    color: #ffffff;
+    font-size: 2.5em;
+    font-weight: bolder;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  .textBackground1{ /* Center text */
+    margin-left: 130px;
+    width: 700px;
+  }
+  #textoBackground{
+    padding-top: 400px; margin-left: -100px; line-height: 90px;
+}
+  .textoBranco{
+    font-family: 'Nexa Bold';
+    color: #ffffff;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: -20px; /*Comentar isso com Tito*/
+  }
+  .caixaCatalogo{
+    height: 580px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 220px;
+    transform: rotate(10deg);
+  }
+  #cartaoAzul {
+    height: 580px;
+    width: 80%;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 220px;
+    transform: rotate(-10deg);
+    background-color: #044ea8;
+  }
+  .catalogoCheck{
+    padding-left: 625px;
+    margin-top: -75px;
+    position: relative;
+  }
+  .btn-catalogo{
+    margin-top: 30px;
+    padding-left: 540px;
+  }
+  .textoQuebrado:after {
+    white-space: pre;
+    margin-top: 20px;
+    margin-left: -100px;
+  }
+  .imagensCirculares{
+      text-align: center;
+      font-size: 25px;
+      width: 80%;
+      margin: auto;
+  }
+
+  .mobile{
+      font-size: 3.0em;
+  }
+
+  .textoBranco{
+    font-family: 'Nexa Bold';
+    color: #ffffff;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: -20px; /*Comentar isso com Tito*/
+}
+
+.textoCinza{
+    font-family: 'Nexa Light';
+    color: #999999;
+    font-size: 2em;
+    font-weight: 300;
+}
+.check{
+    width: 1.8em;
+    height: 1.8em;
+    background-color: white;
+    border-radius: 30%;
+    vertical-align: middle;
+    border: 1px solid #535151;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .itemList{
+    background-color: #e6e6e6;
+    height: 80px;
+    width: 90%;
+    margin:auto;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+  .textItem{
+    padding-top: 20px;
+    padding-left: 14px;
+    font-size: 2em;
+    font-family: 'Nexa Light';
+  }
+  .background2{
+    background-image: url('../img/Imagem 8.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 200px;
+    min-height: 1000px; /*Aumentar pra telas maiores*/
+  }
+  .texto-botao-ancora{
+    margin-top: -3px;
+  }
+    }
+
+  .card{
+      background-color: #262626;
+      transition: all .3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: scale(1.08);
+}
+
+
+  .card-text{
+      color: #fff;
+  }
+
+  .div-card-btn{
+    margin: auto;
+    display: grid;
+    grid-gap: 4%;
+    grid-template-columns: 48% 48%;
+    grid-template-areas: 'first-card-btn second-card-btn';
+  }
+
+  .first-card-btn{
+    grid-area: first-card-btn;
+  }
+
+  .second-card-btn{
+    grid-area: second-card-btn;
+  }
+
+  .background3{
+    background-image: url("../img/Imagem 9.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 67vw;
+    background-position: center;
+    display: block;
+    min-height: 1000px; /*Aumentar pra telas maiores*/
+    margin-top: 100px;
+  }
+  .textoBackground3{
+      padding-top: 35%;
+      text-align: center;
+  }
+  .suporte{
+    text-align: center;
+    margin-top: 50px;
+  }
+  hr{
+      width: 90%;
+      color: #fff;
+      background-color: #969696;
+      height: 2px;
+      border-radius: 1px;
+  }
+
+  .subtitulo-suporte{
+    font-size: 1.3em;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .texto-suporte{
+    width: 80%;
+    font-family: 'Nexa Light';
+    text-align: left;
+    font-weight: lighter;
+    margin-left: 10%;
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+  .botao-ancora{
+    font-family: 'Nexa Light';
+    width: 100%;
+    height: 55px;
+    background-image: linear-gradient(to right, #0569e2, #12519E);
+    color: #ffffff;
+    font-size: 1.0em;
+    font-weight: bolder;
+    border-radius: 0px;
+  }
+
+
+
+  .background4{
+    background-image: url("../img/Imagem 10.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 67vw;
+    background-position: center;
+    display: block;
+    min-height: 1000px; /*Aumentar pra telas maiores*/
+    margin-top: 100px;
+  }
+  .textoBackground4{
+      padding-top: 35%;
+      text-align: center;
+  }
+
+  .cortado{
+    text-decoration: line-through;
+    text-decoration-color: red;
+  }
+  .sublinhado{
+      text-decoration: underline;
+  }
