@@ -175,12 +175,6 @@
         color: #fff;
         font-family: 'Montserrat', sans-serif;
     }
-    .navigation .nav-a{
-        font-size: 1.2em;
-    }
-    .navigation .nav-a-current{
-        font-size: 1.4em;
-    }
 }
 @media (min-device-width: 1101px){
     .a11{
