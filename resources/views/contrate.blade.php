@@ -138,9 +138,11 @@
                         cliente</p>
                       <div class="div-card-btn btn-normal">
                         <div class="first-card-btn">
-                            <button class="btn btn-normal first card-btn btn-normal" type="button" data-toggle="modal" data-target="#exampleModal" style="border-color: #1a1a1a; background-image: linear-gradient(to right, #0569e2, #12519E);">
-                                Visualizar
-                            </button>
+                            <a href="/landpageintermediaria">
+                                <button class="btn btn-normal first card-btn btn-normal" type="button" data-toggle="modal" data-target="#exampleModal" style="border-color: #1a1a1a; background-image: linear-gradient(to right, #0569e2, #12519E);">
+                                    Visualizar
+                                </button>
+                            </a>
                         </div>
                         <div class="second-card-btn">
                             <button class="btn btn-normal first card-btn btn-normal" type="button" data-toggle="modal" data-target="#exampleModal" style="border-color: #1a1a1a; background-image: linear-gradient(to right, #0569e2, #12519E);">

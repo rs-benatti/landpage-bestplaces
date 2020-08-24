@@ -64,3 +64,7 @@ Route::get('/landpageavancada/blog', function(){
 Route::get('/landpageavancada/cardapio', function(){
     return view('landpageavancadacardapio');
 });
+
+Route::get('/landpageintermediaria', function(){
+    return view('landpageintermediaria');
+});

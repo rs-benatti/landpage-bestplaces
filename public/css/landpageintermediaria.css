@@ -1,0 +1,245 @@
+body{
+    font-family: 'Montserrat';
+}
+
+.nav-bar{
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'a11 a12';
+    background-color: rgba(57, 191, 167, 0.5);
+    text-align: center;
+}
+
+.a11{
+    grid-area: a11;
+    font-size: 4em;
+    height: 100%;
+    font-family: 'Corben', cursive;
+    color: #ffffff;
+}
+
+.a11 .small{
+    font-size: 0.6em;
+}
+
+.a12{
+    grid-area: a12;
+    position: relative;
+}
+
+.help{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-300%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgb(57, 191, 167, 1);
+    border-radius: 50%;
+    border-width: 3px;
+    font-size: 2em;
+    border-color: #ffffff;
+    border-style: solid;
+    color: #ffffff;
+    font-weight: bolder;
+    outline: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.background-1{
+    width: 100%;
+    height: 59vw;
+    background-image: url('../img/LP 2 - Imagem 1.png');
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.headline{
+    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%,0%);
+    text-align: center;
+
+}
+
+.big-headline{
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.small-headline{
+    font-size: 1.5em;
+    white-space: nowrap;
+}
+
+.blue-headline{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.blue-headline .big-headline{
+    font-size: 2.5em;
+    color: rgb(57, 191, 167)
+}
+
+.img-grid{
+    display: grid;
+    width: 80%;
+    height: 55vw;
+    margin-left: 18%;
+    margin-top: 40px;
+    grid-gap: 4%;
+    grid-template-columns: 24% 24% 24%;
+    grid-template-rows: 27vw 27vw;
+    grid-template-areas:
+    'b11 b12 b13'
+    'b21 b22 b23';
+
+}
+
+.b11{
+    grid-area: b11;
+    max-width: 100%;
+    background-image:  url('../img/LP 2 - Imagem 2.png');
+    background-size: 100% 100%;
+    transition: 1s;
+
+}
+
+.back-block{
+    opacity: 0;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    height: 100%;
+    backdrop-filter: brightness(25%);
+}
+
+.back-title{
+    padding-top: 20px;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.back-body{
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+.reverse{
+    transform: rotateY(180deg);
+}
+
+
+.b12{
+    grid-area: b12;
+    background-image:  url('../img/LP 2 - Imagem 3.png');
+    background-size: 100% 100%;
+    transition: 1s;
+}
+
+.b13{
+    grid-area: b13;
+    background-image:  url('../img/LP 2 - Imagem 4.png');
+    background-size: 100% 100%;
+    transition: 1s;
+}
+
+.b21{
+    grid-area: b21;
+    background-image:  url('../img/LP 2 - Imagem 5.png');
+    background-size: 100% 100%;
+    transition: 1s;
+}
+
+.b22{
+    grid-area: b22;
+    background-image:  url('../img/LP 2 - Imagem 6.png');
+    background-size: 100% 100%;
+    transition: 1s;
+}
+
+.b23{
+    grid-area: b23;
+    background-image:  url('../img/LP 2 - Imagem 7.png');
+    background-size: 100% 100%;
+    transition: 1s;
+}
+
+.final-blue-headline{
+    margin-top: 100px;
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.final-blue-headline .final-big-headline{
+    font-size: 2.5em;
+    color: rgb(57, 191, 167)
+}
+
+.final-blue-headline .final-small-headline{
+    font-size: 1.5em;
+    color: rgb(57, 191, 167)
+}
+
+.final-button{
+    height: 150px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small-pill{
+    width: 50px;
+    background-color: rgb(156, 223, 211);
+    height: 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.button{
+    margin-top: 5px;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(57, 191, 167);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-width: 0px;
+    outline: none !important;
+}
+
+.big-pill{
+    width: 80px;
+    background-color: rgb(156, 223, 211);
+    height: 15px;
+    border-radius: 8px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+
