@@ -2,15 +2,28 @@
 
 namespace App\Http\Controllers;
 
+use App\FormResponse;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Http\Request;
 
-class MailController extends Controller {
-    public function EmailForm(Request $request){
+
+class FormResponseController extends Controller{
+    public function index(){
+        $FormResponse = FormResponse::all();
+        return view('admin.index', compact('FormResponse'));
+    }
+
+    public function Store(Request $request){
+        $FormResponse = new FormResponse();
+        $FormResponse->nome = $request->nome;
+        $FormResponse->email = $request->email;
+        $FormResponse->telefone = $request->telefone;
+        $FormResponse->plano = $request->plano;
+        $FormResponse->save();
         $dados=$request->all();
         $pos = strpos($dados['nome'], ' ');
         $fullName = $dados['nome'];
@@ -40,5 +53,6 @@ class MailController extends Controller {
         ->subject('BestPlaces | Contato ');
         $message->from('rafa.senna.benatti2@gmail.com','BestPlaces');
         });
+        return redirect('/admin');
     }
 }

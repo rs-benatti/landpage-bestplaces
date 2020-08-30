@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FormResponseController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +20,7 @@ Route::get('/', function () {
 
 Route::get('/enviaWhatsApp', 'ContatoController@Enviar');
 
-Route::get('/enviaEmail', 'MailController@EmailForm');
+Route::post('/enviaEmail/create', 'FormResponseController@Store');
 
 Route::get('/contrate', function () {
     return view('contrate');
@@ -46,25 +47,27 @@ Route::get('/form3', function(){
 });
 
 Route::get('/landpageavancada', function(){
-    return view('landpageavancadawelcome');
+    return view('landpageAvancada.landpageavancadawelcome');
 });
 
 Route::get('/landpageavancada/contato', function(){
-    return view('landpageavancadacontato');
+    return view('landpageAvancada.landpageavancadacontato');
 });
 
 Route::get('/landpageavancada/sobrenos', function(){
-    return view('landpageavancadasobrenos');
+    return view('landpageAvancada.landpageavancadasobrenos');
 });
 
 Route::get('/landpageavancada/blog', function(){
-    return view('landpageavancadablog');
+    return view('landpageAvancada.landpageavancadablog');
 });
 
 Route::get('/landpageavancada/cardapio', function(){
-    return view('landpageavancadacardapio');
+    return view('landpageAvancada.landpageavancadacardapio');
 });
 
 Route::get('/landpageintermediaria', function(){
     return view('landpageintermediaria');
 });
+
+Route::get('/admin', 'FormResponseController@index');

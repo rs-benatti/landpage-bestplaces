@@ -15,7 +15,8 @@
           <div class="modal-content">
             <div class="modal-grid">
                 <div class="c11">
-                <form action="/enviaEmail">
+                <form method="POST" action="/enviaEmail/create">
+                    @csrf
                   <div class="modal-header">
                     <div class="modal-title"><h2>Quase lá!</h2><h4>Entraremos em contato</h4></div>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -136,10 +137,10 @@
                         <p class="card-text"><img src="{{ url('/img/check azul.svg') }}"  width="40" height="40" align="left"/>Envio automático de e-mails com promoções relâmpago</p>
                         <p class="card-text"><img src="{{ url('/img/check azul.svg') }}" class="img-check" width="40" height="40" align="left"/>Canal de vendas para o seu
                         cliente</p>
-                      <div class="div-card-btn btn-normal">
+                      <div class="div-card-btn btn-normal" style="margin-top: 30px">
                         <div class="first-card-btn">
                             <a href="/landpageintermediaria">
-                                <button class="btn btn-normal first card-btn btn-normal" type="button" data-toggle="modal" data-target="#exampleModal" style="border-color: #1a1a1a; background-image: linear-gradient(to right, #0569e2, #12519E);">
+                                <button class="btn btn-normal first card-btn btn-normal" type="button" style="border-color: #1a1a1a; background-image: linear-gradient(to right, #0569e2, #12519E);">
                                     Visualizar
                                 </button>
                             </a>
@@ -173,7 +174,7 @@
                         <div class="card-text" style="margin-top: 20px;"><img class="img-check" src="{{ url('/img/check branco.svg') }}"  width="40" height="40" align="left" /><blockquote class="blockquote-text">Barra de navegação</blockquote></div>
                         <div class="card-text" style="margin-top: 20px;"><img class="img-check" src="{{ url('/img/check branco.svg') }}"  width="40" height="40" align="left" /><blockquote class="blockquote-text">Portfólio</blockquote></div>
                         <div class="card-text" style="margin-top: 20px;"><img class="img-check" src="{{ url('/img/check branco.svg') }}"  width="40" height="40" align="left" /><blockquote class="blockquote-text">Suporte</blockquote></div>
-                      <div class="div-card-btn btn-normal">
+                      <div class="div-card-btn btn-normal"  style="margin-top: 30px">
                         <div class="first-card-btn">
                             <a href="/landpageavancada">
                                 <button class="btn btn-normal first card-btn btn-normal" type="button" style="border-color: #1a1a1a; background-image: linear-gradient(to right, #fff, #fff); color:#0569e2;">
