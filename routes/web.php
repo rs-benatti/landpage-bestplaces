@@ -28,7 +28,7 @@ Route::get('/contrate', function () {
 
 Route::get('/suporte', function () {
     return view('suporte');
-});
+})->name('suporte');
 
 Route::get('/contatoWhatsApp', 'ContatoController@Contato');
 

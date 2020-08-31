@@ -1,37 +1,12 @@
-<!DOCTYPE html>
-<head>
-    <title>BIP - Torne seu lugar melhor</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="{{ url('css/landpageintermediaria.css') }}" />
-    <script>
-        function rotate(e){
-            var divStyle = e.style;
-            var backBlock = document.getElementById(e.className);
-            divStyle.transform= 'rotateY(180deg)';
-            document.getElementById(e.className).style.display = 'block';
-            setTimeout(function(){document.getElementById(e.className).style.opacity = '1'; }, 300);
-        }
-
-        function desrotate(){
-            var rotateElements = document.getElementsByClassName('back-block');
-            var rotateElementsName =  document.getElementsByName('rotateName');
-            var i;
-            for (i = 0; i < rotateElements.length; i++) {
-                rotateElementsName[i].style.transform = 'rotateY(360deg)';
-                rotateElements[i].style.opacity = '0';
-                rotateElements[i].style.display = 'none';
-            }
-        }
-    </script>
-</head>
-<body>
-    <div class="background-1">
+@extends('layouts.landing')
+@section('scripts')
+<script src="{{asset('js/lp-intermediaria.js')}}"></script>
+@endsection
+@section('styles')
+<link rel="stylesheet" type="text/css" href="{{ url('css/landpageintermediaria.css') }}" />
+@endsection
+@section('conteudo')
+<div class="background-1">
         <div class="nav-bar">
             <div class="a11 vertical-center">
                 <a>Liberte.<span class="small">seguros</span></a>
@@ -151,4 +126,5 @@
         </button>
         <div class="big-pill"></div>
     </div>
-</body>
+@endsection
+
