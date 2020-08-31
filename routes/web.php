@@ -48,7 +48,7 @@ Route::get('/form3', function(){
 
 Route::get('/landpageavancada', function(){
     return view('landpageAvancada.landpageavancadawelcome');
-});
+})->name('avancada.index');
 
 Route::get('/landpageavancada/contato', function(){
     return view('landpageAvancada.landpageavancadacontato');
@@ -64,7 +64,7 @@ Route::get('/landpageavancada/blog', function(){
 
 Route::get('/landpageavancada/cardapio', function(){
     return view('landpageAvancada.landpageavancadacardapio');
-});
+})->name('avancada.cardapio');
 
 Route::get('/landpageintermediaria', function(){
     return view('landpageintermediaria');
