@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\FormResponseController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -70,4 +71,8 @@ Route::get('/landpageintermediaria', function(){
     return view('landpageintermediaria');
 });
 
-Route::get('/admin', 'FormResponseController@index');
+Route::get('/admin', 'FormResponseController@index')->middleware('auth');
+
+Auth::routes(['register' => false]);
+
+Route::get('/home', 'HomeController@index')->name('home');
