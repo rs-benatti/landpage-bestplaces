@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<head>
-    <title>BIP - Torne seu lugar melhor</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="{{ url('css/main.css') }}" />
-</head>
-<body>
-    <!-- Modal -->
-    <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+@extends('layouts.layout')
+@section('conteudo')
+<!-- Modal -->
+<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-grid">
@@ -71,21 +62,9 @@
           </div>
         </div>
     </div>
-    <div class="container-fluid">
-      <nav class="nav nav-pills nav-fill">
-        <a class="nav-item textoBranco" id="imagemBP">
-            <img class="svg" src="{{ url('/img/Logomarca - Best Places.svg') }}"></img>
-        </a>
-        <a class="nav-item nav-link" href="/">Início</a>
-        <a class="nav-item nav-link" href="/suporte">Suporte</a>
-        <a class="nav-item nav-link" href="/contrate">
-            <button class="btn btn-normal first transform" type="button" id="botaoContratar">
-                Contratar
-            </button>
-        </a>
-      </nav>
-    </div>
-      <div id="manchete">
+
+
+    <div id="manchete">
         <p class="textoAzul">Planos</p>
         <p class="textoBranco">Escolha o melhor plano para o seu negócio!</p>
         <p class="textoCinza">Esse é só o começo de uma sequência de melhorias</p>
@@ -277,5 +256,4 @@
             </a>
         </div>
       </div>
-</body>
-</html>
+@endsection

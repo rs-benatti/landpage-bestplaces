@@ -42,13 +42,13 @@ class FormResponseController extends Controller{
         $to_name = $nome;
         $to_email = $email;
         $data = array('number'=>$number,'fullName'=>$fullName,'name'=>$nome, "body" => "Olá, gostaria de fazer meu site com a Best Places. Me interessei pelo ", "plano"=>$plano);
-        Mail::send('mail', $data, function($message) use ($to_name, $to_email) {
+        Mail::send('emails.mail', $data, function($message) use ($to_name, $to_email) {
         $message->to('rafa.senna.benatti2@gmail.com', $to_name)
         ->subject('BestPlaces | Contato ');
         $message->from('rafa.senna.benatti2@gmail.com','BestPlaces');
         });
         $data = array('number'=>$number,'fullName'=>$fullName,'name'=>$nome, "body" => "Olá, gostaria de fazer meu site com a Best Places. Me interessei pelo ", "plano"=>$plano);
-        Mail::send('mail-client', $data, function($message) use ($to_name, $to_email) {
+        Mail::send('emails.mail-client', $data, function($message) use ($to_name, $to_email) {
         $message->to($to_email, $to_name)
         ->subject('BestPlaces | Contato ');
         $message->from('rafa.senna.benatti2@gmail.com','BestPlaces');

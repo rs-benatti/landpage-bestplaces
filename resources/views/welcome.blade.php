@@ -1,27 +1,6 @@
-<!DOCTYPE html>
-<head>
-    <title>BIP - Torne seu lugar melhor</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="{{ url('css/main.css') }}" />
-</head>
-<body>
-    <div class="container-fluid">
-      <nav class="nav nav-pills nav-fill">
-        <a class="nav-item" id="imagemBP">
-            <img class="svg" src="{{ url('/img/Logomarca - Best Places.svg') }}"></img>
-        </a>
-        <a class="nav-item nav-link atual" href="/">Início</a>
-        <a class="nav-item nav-link" href="/suporte">Suporte</a>
-        <a class="nav-item nav-link" href="/contrate">
-            <button class="btn btn-normal first transform" type="button" id="botaoContratar">
-                Contratar
-            </button>
-        </a>
-      </nav>
-    </div>
-      <div id="manchete">
+@extends('layouts.layout')
+@section('conteudo')
+<div id="manchete">
         <p class="textoVerde">Elimine barreiras</p>
         <p class="textoBranco">Seu projeto é muito maior que qualquer desafio!</p>
         <p class="textoCinza">Somos os melhores para tornar o seu <strong>site</strong> realidade!</p>
@@ -270,5 +249,4 @@ acontecerem no automático"></a>
             </div>
         </div>
       </div>
-</body>
-</html>
+@endsection

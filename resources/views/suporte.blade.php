@@ -1,27 +1,6 @@
-<!DOCTYPE html>
-<head>
-    <title>BIP - Torne seu lugar melhor</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="{{ url('css/main.css') }}" />
-</head>
-<body class="black">
-    <div class="container-fluid">
-      <nav class="nav nav-pills nav-fill">
-        <a class="nav-item textoBranco">
-            <img class="svg" src="{{ url('/img/Logomarca - Best Places.svg') }}"></img>
-        </a>
-        <a class="nav-item nav-link" href="/">Início</a>
-        <a class="nav-item nav-link atual" href="/suporte">Suporte</a>
-        <a class="nav-item nav-link" href="/contatoWhatsApp" target="_blank">
-            <button href="/contatoWhatsApp" class="btn first transform btn-branco" type="button" id="botaoContratar">
-                Entre em contato
-            </button>
-        </a>
-      </nav>
-    </div>
-      <div class="background4">
+@extends('layouts.layout')
+@section('conteudo')
+<div class="background4">
         <div class="textoBackground4" style="margin-top: -300px;">
             <div class="textoBranco" style="font-size: 3.5em; line-height: 120px;">
                 Ainda não entendeu completamente?
@@ -227,4 +206,4 @@
         </div>
         <br>
       </div>
-</body>
+@endsection
