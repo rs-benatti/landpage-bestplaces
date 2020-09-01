@@ -319,6 +319,18 @@ nav{
     color: #fff;
   }
 
+  .first-card-btn .btn-visu{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-family: 'Nexa Light';
+    text-decoration: underline;
+    margin-top: -10px;
+    border-width: 0px;
+    outline: none;
+    font-size: 1.2em;
+}
+
 .img-check{
     margin-top: -10px;
 }
@@ -523,6 +535,22 @@ nav{
     padding-left: 750px;
   }
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .nav-link{
+        font-size: 2em !important;
+    }
+
+    .first-card-btn .btn-visu{
+        height: 100%;
+        width: 100%;
+        color: #fff;
+        font-family: 'Nexa Light';
+        text-decoration: underline;
+        margin-top: 0px;
+        border-width: 0px;
+        outline: none;
+        font-size: 2.5em;
+  }
+
     .content-404{
         display: block;
         width: 80%;
@@ -819,6 +847,21 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .imagensCirculares .textoBranco{
+      font-size: 1.8em;
+  }
+
+  .content-success{
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-left: 50%;
+      margin-top: 25%;
+      color: #fff;
+      text-align: center;
+      transform: translate(-50%, -60%);
   }
 
 

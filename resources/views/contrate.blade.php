@@ -21,8 +21,13 @@
                               <div class="col-12">
                                   <div class="form-group">
                                       <label for="InputEmail">E-mail</label>
-                                      <input type="email" class="form-control" id="InputEmail" name="email" placeholder="exemplo@seuemail.com">
-                                  </div>
+                                      <input type="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" required autocomplete="email" id="InputEmail" name="email" placeholder="exemplo@seuemail.com">
+                                      @error('email')
+                                      <span class="invalid-feedback" role="alert">
+                                          <strong>Oi</strong>
+                                      </span>
+                                  @enderror
+                                </div>
                               </div>
                               <div class="col-12">
                                   <div class="form-group">
@@ -86,7 +91,7 @@
                       <div class="div-card-btn btn-normal">
                         <div class="first-card-btn">
                             <a href="/landpagebasica">
-                                <button class="btn btn-normal first card-btn btn-normal" type="button" style="border-color: #1a1a1a;">
+                                <button class="btn-visu first transform" type="button" style="background-color: transparent !important;">
                                     Visualizar
                                 </button>
                             </a>
@@ -119,7 +124,7 @@
                       <div class="div-card-btn btn-normal" style="margin-top: 30px">
                         <div class="first-card-btn">
                             <a href="/landpageintermediaria">
-                                <button class="btn btn-normal first card-btn btn-normal" type="button" style="border-color: #1a1a1a; background-image: linear-gradient(to right, #0569e2, #12519E);">
+                                <button class="btn-visu first transform" type="button" style="background-color: transparent !important;">
                                     Visualizar
                                 </button>
                             </a>
@@ -156,7 +161,7 @@
                       <div class="div-card-btn btn-normal"  style="margin-top: 30px">
                         <div class="first-card-btn">
                             <a href="/landpageavancada">
-                                <button class="btn btn-normal first card-btn btn-normal" type="button" style="border-color: #1a1a1a; background-image: linear-gradient(to right, #fff, #fff); color:#0569e2;">
+                                <button class="btn-visu first transform" type="button" style="background-color: transparent !important;">
                                     Visualizar
                                 </button>
                             </a>
@@ -185,13 +190,25 @@
               <p class="card-text"><img src="{{ url('/img/check verde.svg') }}"  width="100" height="100" align="left"/>Coleta de e-mails de clientes para seu banco de dados</p>
               <div class="card-text"><img src="{{ url('/img/check verde.svg') }}"  width="100" height="100" align="left"/><blockquote class="blockquote-text">Espaço para cardápio/catálogo
                 de sua empresa</blockquote></div>
-              <a href="/form3" class="div-card-btn btn-normal">
-                <button class="btn btn-normal first card-btn btn-normal" type="button" style="border-color: #1a1a1a;">
-                    Contratar
-                </button>
-              </a>
+              <div class="div-card-btn btn-normal">
+                <div class="first-card-btn">
+                    <a href="/landpagebasica">
+                        <button class="btn-visu first transform" type="button" style="background-color: transparent !important;">
+                            Visualizar
+                        </button>
+                    </a>
+                </div>
+                <div class="second-card-btn">
+                    <a href="/form3">
+                    <button class="btn btn-normal first card-btn btn-normal" type="button" style="border-color: #1a1a1a;">
+                        Contratar
+                    </button>
+                    </a>
+                </div>
+                </div>
             </div>
-        </div>
+            </div>
+
         <div class="card container" style="width: 70%; border-radius: 30px;">
             <div class="card-body" style="width: 100%;">
               <h1 class="textoAzul" style="font-size: 3.5em">Intermediário</h1>
@@ -207,11 +224,22 @@
               <p class="card-text"><img src="{{ url('/img/check azul.svg') }}"  width="100" height="100" align="left"/>Envio automático de e-mails com promoções relâmpago</p>
               <p class="card-text"><img src="{{ url('/img/check azul.svg') }}"  width="100" height="100" align="left"/>Canal de vendas para o seu
               cliente</p>
-              <a href="/form3" class="div-card-btn btn-normal">
-                <button class="btn btn-normal first card-btn btn-normal" type="button" style="border-color: #1a1a1a; background-image: linear-gradient(to right, #0569e2, #12519E);">
-                    Contratar
-                </button>
-              </a>
+              <div class="div-card-btn btn-normal">
+                <div class="first-card-btn">
+                    <a href="/landpageintermediaria">
+                        <button class="btn-visu first transform" type="button" style="background-color: transparent !important;">
+                            Visualizar
+                        </button>
+                    </a>
+                </div>
+                <div class="second-card-btn">
+                    <a href="/form3">
+                    <button class="btn btn-normal first card-btn btn-normal" type="button" style="border-color: #1a1a1a; background-image: linear-gradient(to right, #0569e2, #12519E);">
+                        Contratar
+                    </button>
+                    </a>
+                </div>
+                </div>
             </div>
         </div>
         <div class="card container" style="width: 70%; border-radius: 30px; background-image: linear-gradient(to bottom, #0569e2, rgb(13, 51, 99));">
@@ -233,11 +261,22 @@
               <div class="card-text" style="margin-top: 50px;"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">Barra de navegação</blockquote></div>
               <div class="card-text" style="margin-top: 50px;"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">Portfólio</blockquote></div>
               <div class="card-text" style="margin-top: 50px;"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">Suporte</blockquote></div>
-              <a href="/form3" class="div-card-btn btn-normal">
-                <button class="btn btn-normal first card-btn btn-normal" type="button" style="border-color: #1a1a1a; background-image: linear-gradient(to right, #fff, #fff); color:#0569e2;">
-                    Contratar
-                </button>
-              </a>
+              <div class="div-card-btn btn-normal">
+                <div class="first-card-btn">
+                    <a href="/landpageavancada">
+                        <button class="btn-visu first transform" type="button" style="background-color: transparent !important;">
+                            Visualizar
+                        </button>
+                    </a>
+                </div>
+                <div class="second-card-btn">
+                    <a href="/form3">
+                        <button class="btn btn-normal first card-btn btn-normal" type="button" style="border-color: #1a1a1a; background-image: linear-gradient(to right, #fff, #fff); color:#0569e2;">
+                            Contratar
+                        </button>
+                    </a>
+                </div>
+                </div>
             </div>
         </div>
       </div>
@@ -256,4 +295,7 @@
             </a>
         </div>
       </div>
+      <script>
+
+      </script>
 @endsection

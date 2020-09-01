@@ -9,6 +9,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 
 class FormResponseController extends Controller{
@@ -17,7 +18,18 @@ class FormResponseController extends Controller{
         return view('admin.index', compact('FormResponse'));
     }
 
+    protected function validator(array $data)
+    {
+        return Validator::make($data, [
+            'nome' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:form_responses'],
+            'telefone' => ['required', 'string', 'max:255'],
+            'plano' => ['required', 'string', 'max:255'],
+        ]);
+    }
+
     public function Store(Request $request){
+        $this->validator($request->all())->validate();
         $FormResponse = new FormResponse();
         $FormResponse->nome = $request->nome;
         $FormResponse->email = $request->email;
