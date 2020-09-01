@@ -12,6 +12,11 @@
                 <p class="textoCinza" style="color: #fff;">
                     Se não achar, fica a vontade para falar com a gente!
                 </p>
+                <a href="/contatoWhatsApp">
+                    <button class="btn first transform btn-branco btn-suporte" type="button" id="botaoContratar">
+                        Entre em contato
+                    </button>
+                </a>
             </div>
           </div>
           <div class="container" style="margin-top: -100px;">

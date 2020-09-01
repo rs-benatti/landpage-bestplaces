@@ -13,11 +13,16 @@ body{
 .nav-link{
     font-family: 'Nexa Light';
     font-weight: 700;
-    font-size: xx-large;
+    font-size: 1.5em;
     color: #ffffff;
 }
 #imagemBP{
     margin-top: -20px; /*Comentar isso com Tito*/
+}
+
+.btn-suporte{
+    font-size: 1.5em !important;
+    margin-top: 20px !important;
 }
 
 nav{
@@ -33,25 +38,25 @@ nav{
 }
 
 #manchete{
-    margin-top: 60px;
+    margin-top: 100px;
     text-align: center;
 }
 .textoVerde{
     font-family: 'Nexa Bold';
-    font-size: 4.5em;
+    font-size: 4em;
     color: #57c478;
     font-weight: bolder;
 }
 .textoAzul{
     font-family: 'Nexa Bold';
-    font-size: 4.5em;
+    font-size: 4em;
     color: #1055A9;
     font-weight: bolder;
 }
 .textoBranco{
     font-family: 'Nexa Bold';
     color: #ffffff;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
     margin-top: -20px; /*Comentar isso com Tito*/
 }
