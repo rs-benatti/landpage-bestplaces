@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\FormResponseController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -70,4 +71,27 @@ Route::get('/landpageintermediaria', function(){
     return view('landpageintermediaria');
 });
 
-Route::get('/admin', 'FormResponseController@index');
+Route::get('/admin', 'AdminController@index')->middleware('auth');
+
+Auth::routes(['register' => false]);
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+//Rotas de email
+
+Route::resource('email','EmailController');
+
+Route::get('/send','EmailController@toSend')->name('email.toSend');
+
+Route::post('/sendMail','EmailController@sendMail')->name('email.sendMail');
+
+Route::get('/scheduled/{id}','EmailController@getAllMessages')->name('email.scheduled');
+
+Route::get('/sent/{id}','EmailController@sent')->name('email.sent');
+
+Route::get('/finalize/{id}','EmailController@finalize')->name('email.finalize');
+
+Route::get('/updatePassword/','EmailController@updatePassword')->name('password.change');
+
+Route::put('/up/{user}','EmailController@up')->name('password.up');
