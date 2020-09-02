@@ -34,14 +34,14 @@ class ContatoController extends Controller {
         $ipod = strpos($_SERVER['HTTP_USER_AGENT'], "iPod");
         // check if is a mobile
             if ($iphone || $android || $palmpre || $ipod || $berry == true) {
-                header('Location:  https://api.whatsapp.com/send?phone=5575992132020&text=Olá!%20Eu%20gostaria%20de%20personalizar%20o%20plano%20do%20meu%20site%20BestPlaces');
+                header('Location:  https://api.whatsapp.com/send?phone=5575992132020&text=Olá!%20Meu%20projeto%20de%20site%20não%20se%20encaixa%20em%20nenhum%20dos%203%20planos%20padrões,%20quero%20personalizar%20meu%20plano');
                 //OR
-                return redirect('https://api.whatsapp.com/send?phone=5575992132020&text=Olá!%20Eu%20gostaria%20de%20personalizar%20o%20plano%20do%20meu%20site%20BestPlaces');
+                return redirect('https://api.whatsapp.com/send?phone=5575992132020&text=Olá!%20Meu%20projeto%20de%20site%20não%20se%20encaixa%20em%20nenhum%20dos%203%20planos%20padrões,%20quero%20personalizar%20meu%20plano');
             } // all others
             else {
-                header('Location: https://web.whatsapp.com/send?phone=5575992132020&text=Olá!%20Eu%20gostaria%20de%20personalizar%20o%20plano%20do%20meu%20site%20BestPlaces');
+                header('Location: https://web.whatsapp.com/send?phone=5575992132020&text=Olá!%20Meu%20projeto%20de%20site%20não%20se%20encaixa%20em%20nenhum%20dos%203%20planos%20padrões,%20quero%20personalizar%20meu%20plano');
                 //OR
-                return redirect('https://web.whatsapp.com/send?phone=5575992132020&text=Olá!%20Eu%20gostaria%20de%20personalizar%20o%20plano%20do%20meu%20site%20BestPlaces');
+                return redirect('https://web.whatsapp.com/send?phone=5575992132020&text=Olá!%20Meu%20projeto%20de%20site%20não%20se%20encaixa%20em%20nenhum%20dos%203%20planos%20padrões,%20quero%20personalizar%20meu%20plano');
             }
         }
         public function Enviar(Request $request){

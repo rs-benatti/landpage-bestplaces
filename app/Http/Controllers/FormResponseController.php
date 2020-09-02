@@ -11,6 +11,7 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use App\Jobs\SendEmail;
 
 
 class FormResponseController extends Controller{
@@ -48,8 +49,8 @@ class FormResponseController extends Controller{
         $number = $dados['telefone'];
         $to_name = $nome;
         $to_email = $email;
-        $data = array('number'=>$number,'fullName'=>$fullName,'name'=>$nome, "body" => "Olá, gostaria de fazer meu site com a Best Places. Me interessei pelo ", "plano"=>$plano);
-        Mail::send('emails.mail', $data, function($message) use ($to_name, $to_email) {
+        $data = array('number'=>$number,'fullName'=>$fullName,'name'=>$nome, "body" => "Olá, gostaria de fazer meu site com a Best Places. Me interessei pelo ", "plano"=>$plano, "email" => $email, 'our_mail' => 'rafa.senna.benatti2@gmail.com');
+        /*Mail::send('emails.mail', $data, function($message) use ($to_name, $to_email) {
         $message->to('rafa.senna.benatti2@gmail.com', $to_name)
         ->subject('BestPlaces | Contato ');
         $message->from('rafa.senna.benatti2@gmail.com','BestPlaces');
@@ -59,7 +60,8 @@ class FormResponseController extends Controller{
         $message->to($to_email, $to_name)
         ->subject('BestPlaces | Contato ');
         $message->from('rafa.senna.benatti2@gmail.com','BestPlaces');
-        });
+        });*/
+        SendEmail::dispatch($data);
         try{
         $FormResponse = new FormResponse();
         $FormResponse->nome = $request->nome;

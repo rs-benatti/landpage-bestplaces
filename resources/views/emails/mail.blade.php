@@ -1,8 +1,8 @@
-<p>{{ $body }}{{$plano}}.</p>
+<p>{{ $data['body'] }}{{ $data['plano']}}.</p>
 
-<p>Número para contato: {{$number}}.</p>
+<p>Número para contato: {{$data['number']}}.</p>
 
 <p>Atenciosamente,</p>
-{{$fullName}}
+{{$data['fullName']}}
 
 
