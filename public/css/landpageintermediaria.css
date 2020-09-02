@@ -93,6 +93,11 @@ body{
     color: rgb(57, 191, 167);
 }
 
+.reduced-font-size{
+    font-size: 0.86em;
+    margin-top: -15px;
+}
+
 @media (min-width: 1101px){
     .background-1{
         width: 100%;

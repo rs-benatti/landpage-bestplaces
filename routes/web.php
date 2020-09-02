@@ -59,6 +59,11 @@ Route::get('/landpageavancada/sobrenos', function(){
     return view('landpageAvancada.landpageavancadasobrenos');
 });
 
+Route::get('/success', function(){
+    return view('success');
+});
+
+
 Route::get('/landpageavancada/blog', function(){
     return view('landpageAvancada.landpageavancadablog');
 });

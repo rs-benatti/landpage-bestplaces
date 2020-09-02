@@ -56,6 +56,8 @@
         height: 100%;
         margin-top: 0px;
         display: grid;
+        padding-right: 20px;
+        font-size: 1.4em;
         grid-template-columns: 1fr 1.4fr 1fr 1.5fr 1fr;
         grid-template-areas: 'b11 b12 b13 b14 b15';
         color: #fff;
@@ -74,7 +76,7 @@
         'c11'
         'c12'
         'c21';
-        grid-gap: 60px;
+        grid-gap: 200px;
     }
 }
 
@@ -134,7 +136,7 @@
     text-align: left;
     justify-content: center;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .navigation .b12{
@@ -143,7 +145,7 @@
     text-align: left;
     justify-content: center;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .navigation .b13{
@@ -152,7 +154,7 @@
     text-align: left;
     justify-content: center;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .navigation .b14{
@@ -161,7 +163,7 @@
     text-align: left;
     justify-content: center;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .navigation .b15{
@@ -170,7 +172,7 @@
     text-align: left;
     justify-content: center;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 

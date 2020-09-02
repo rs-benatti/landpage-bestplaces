@@ -32,7 +32,7 @@
                 <div class="back-title reverse">
                     SEGURO DE AUTOMÓVEL
                 </div>
-                <div class="back-body reverse">
+                <div class="back-body reverse reduced-font-size">
                     Diante de tantos aspectos, percebe-se que o seguro auto é mais do que essencial. O
                     ideal é fazê-lo assim que sair da concessionária. Não queremos nunca que aconteça
                     qualquer acidente. Mas caso aconteçam bom que tenhamos o nosso seguro. Carro é um

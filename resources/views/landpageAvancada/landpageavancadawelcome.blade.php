@@ -2,8 +2,8 @@
 @section('styles')
 <link rel="stylesheet" type="text/css" href="{{ url('css/landpageavancada.css') }}" />
 @endsection
-
 @section('conteudo')
+
         <div class="headline">
             <div class="headline-text-container">
                 <h1 class="headline-branco">UM MOMENTO.</h1>

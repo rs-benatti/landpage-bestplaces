@@ -52,7 +52,7 @@
     text-align: left;
     justify-content: center;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .navigation .b12{
@@ -61,7 +61,7 @@
     text-align: left;
     justify-content: center;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .navigation .b13{
@@ -70,7 +70,7 @@
     text-align: left;
     justify-content: center;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .navigation .b14{
@@ -79,7 +79,7 @@
     text-align: left;
     justify-content: center;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .navigation .b15{
@@ -88,7 +88,7 @@
     text-align: left;
     justify-content: center;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .headline-button-div{
@@ -181,7 +181,7 @@
     .headline-button-anchor{
         color: #fff;
         height: 45px;
-        width: 150px;
+        width: 180px;
         border-radius: 5px;
         padding: auto;
         margin-top: 50px;
@@ -210,6 +210,15 @@
     :root{
         font-size: 1.4em;
     }
+
+    .poop-up{
+        background-color: #fff;
+        height: 20vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
     .welcome-body{
         background-color: #0f0f0f;
         width: 100%;
@@ -221,6 +230,11 @@
     }
     .welcome-body .a11{
         position: relative;
+    }
+
+    .navigation{
+        padding-right: 20px;
+        font-size: 1.4em;
     }
 
     .navigation .nav-a{

@@ -16,7 +16,7 @@ class FormResponse extends Migration
         Schema::create('form_responses', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->string('email');
+            $table->string('email')->unique();
             $table->string('telefone');
             $table->string('plano');
             $table->timestamps();
@@ -30,6 +30,6 @@ class FormResponse extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('form_response');
     }
 }

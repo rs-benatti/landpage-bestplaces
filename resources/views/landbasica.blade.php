@@ -18,7 +18,7 @@
                 <h1 class="verdeEscuro grande inline">Baixe o App <span><img src="{{ url('/img/Ícone - Download.svg') }}" alt="" width="50px" height="50px"></span></h1>
             </div>
         </div>
-        <div class="row">
+        <div class="row mobile-margin-top-50">
             <div class="col-2">
                 <div class="icone1">
                     <div class="divicones">
