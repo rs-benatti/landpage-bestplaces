@@ -91,7 +91,7 @@
         text-align: left;
         justify-content: center;
         margin: auto;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .navigation .b12{
@@ -100,7 +100,7 @@
         text-align: left;
         justify-content: center;
         margin: auto;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .navigation .b13{
@@ -109,7 +109,7 @@
         text-align: left;
         justify-content: center;
         margin: auto;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .navigation .b14{
@@ -118,7 +118,7 @@
         text-align: left;
         justify-content: center;
         margin: auto;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .navigation .b15{
@@ -127,7 +127,7 @@
         text-align: left;
         justify-content: center;
         margin: auto;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .burguer-image{
@@ -187,6 +187,11 @@
         font-family: 'Montserrat', sans-serif;
     }
 
+    .navigation{
+        padding-right: 20px;
+        font-size: 1.4em;
+    }
+
     .navigation .nav-a{
         width: 100%;
         height: 100%;
@@ -228,7 +233,7 @@
         text-align: left;
         justify-content: center;
         margin: auto;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .navigation .b12{
@@ -237,7 +242,7 @@
         text-align: left;
         justify-content: center;
         margin: auto;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .navigation .b13{
@@ -246,7 +251,7 @@
         text-align: left;
         justify-content: center;
         margin: auto;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .navigation .b14{
@@ -255,7 +260,7 @@
         text-align: left;
         justify-content: center;
         margin: auto;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .welcome-body .a11 .headline{
@@ -273,7 +278,7 @@
         text-align: left;
         justify-content: center;
         margin: auto;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .welcome-body .a12{

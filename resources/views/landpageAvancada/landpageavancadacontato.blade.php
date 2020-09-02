@@ -41,12 +41,12 @@
             <h1 class="container-headline">
                 Precisa falar com a gente?
             </h1>
-            <h4 class="container-headline">
+            <h3 class="container-headline">
                 75 9999-9999
-            </h4>
-            <h4>
+            </h3>
+            <h2>
                 exemplo@email.com
-            </h4>
+            </h2>
             <div class="social">
                 <div class="d11">
                     <a>
