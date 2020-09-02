@@ -66,7 +66,7 @@ class EmailController extends Controller
     public function sendMail(Request $request){
         $this->authorize('viewAny',Email::class);
         $hashids = new Hashids(Email::class.'7623e9b0009feff8e024a689d6ef59ce',10);
-        $hashids2 = new Hashids(User::class.'7623e9b0009feff8e024a689d6ef59ce',10);
+        $hashids2 = new Hashids(FormResponse::class.'7623e9b0009feff8e024a689d6ef59ce',10);
         $em = ($hashids->decode($request->email))[0];
         $email = Email::find($em);
         if($request->button_now) {

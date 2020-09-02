@@ -1,4 +1,15 @@
+@font-face{
+    font-family: 'Nexa Bold';
+    src: url("/fonts/nexa-bold.otf");
+}
+@font-face{
+    font-family: 'Nexa Light';
+    src: url("/fonts/nexa-light.otf");
+}
+
 .side-bar{
+    color: #fff;
+    font-family: 'Nexa Light';
     height: 100%;
     background-color: #000000;
     position: absolute;
@@ -8,6 +19,24 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+}
+
+.side-bar a{
+    color: #fff;
+    font-family: 'Nexa Light';
+}
+
+.side-bar .grow{
+    text-align: center;
+    transition: 0.2s;
+}
+
+.side-bar .grow:hover{
+    transform: scale(1.1);
+}
+
+#sidebar{
+    margin-top: 30px;
 }
 
 .svg{
@@ -41,4 +70,14 @@
 .sidebar{
     transition: all 0.3s;
 }
+
+.nexa-bold{
+    font-family: 'Nexa Bold';
+}
+
+.nexa-light{
+    font-family: 'Nexa Light';
+}
+
+
 
