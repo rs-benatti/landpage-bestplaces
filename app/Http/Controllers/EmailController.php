@@ -6,6 +6,7 @@ use App\Email;
 use App\Jobs\SendMailJob;
 use App\User;
 use App\UserEmail;
+use App\FormResponse;
 use Carbon\Carbon;
 use Hashids\Hashids;
 use Illuminate\Http\Request;
@@ -57,8 +58,8 @@ class EmailController extends Controller
         $this->authorize('viewAny',Email::class);
         $emails = Email::all();
         $hashids1 = new Hashids(Email::class.'7623e9b0009feff8e024a689d6ef59ce',10);
-        $hashids2 = new Hashids(User::class.'7623e9b0009feff8e024a689d6ef59ce',10);
-        $users = User::where('isAdmin',false)->get();
+        $hashids2 = new Hashids(FormResponse::class.'7623e9b0009feff8e024a689d6ef59ce',10);
+        $users = FormResponse::all();
         return view('email.send',compact('emails','hashids1','hashids2','users'));
     }
 
@@ -71,7 +72,7 @@ class EmailController extends Controller
         if($request->button_now) {
             foreach($request->users as $user){
                 $us = ($hashids2->decode($user))[0];
-                $user = User::find($us);
+                $user = FormResponse::find($us);
                 $user_email = new UserEmail();
                 $user_email->user_id = $user->id;
                 $user_email->email_id = $email->id;

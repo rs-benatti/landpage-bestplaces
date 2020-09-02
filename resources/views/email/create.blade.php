@@ -1,4 +1,4 @@
-@extends('home')
+@extends('layouts.admin')
         <link rel="stylesheet" type="text/css" href="{{ url('/css/create.css') }}" />
 @section('conteudo')
     <div class="container">

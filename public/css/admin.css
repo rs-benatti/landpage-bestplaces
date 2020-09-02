@@ -34,74 +34,11 @@
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 
-}
-.wrapper{
+}.wrapper{
     display: flex;
     position: relative;
 }
 .sidebar{
     transition: all 0.3s;
 }
-.wrapper .sidebar{
-    background-color:#CFB15C;
-    width: 200px;
-    height: 100%;
-    padding: 30px 0;
-    position: fixed;
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-    overflow: auto;
-}
 
-
-.wrapper .conteudo{
-    margin-left:300px;
-    width:100%  ;
-}
-
-.wrapper li a {
-    padding: 10px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    border-top: 1px solid rgba(255,255,255,0.05);
-}
-
-
-.wrapper .sidebar  li a{
-    color: #081B4A;
-    display: block;
-}
-
-.dropdown-item:hover{
-    background-color: transparent;
-}
-
-.wrapper .sidebar li a.fas{
-    width: 25px;
-}
-
-.wrapper .sidebar  li a:hover{
-    background: #bfa250;
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}

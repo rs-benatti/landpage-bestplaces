@@ -13,7 +13,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        'App\Console\Commands\NotifyUsers',
+        'App\Console\Commands\ChecklastDay'
     ];
 
     /**
@@ -25,6 +26,8 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('inspire')->hourly();
+        $schedule->command('notify:users')->everyMinute();
+        $schedule->command('command:checklastday')->daily();
     }
 
     /**

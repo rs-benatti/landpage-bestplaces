@@ -1,4 +1,4 @@
-@extends('home')
+@extends('layouts.admin')
 <link rel="stylesheet" type="text/css" href="{{ url('/css/emailscheduled.css') }}" />
 @section('conteudo')
     @if(\Session::has('success'))

@@ -1,4 +1,4 @@
-@extends('home')
+@extends('layouts.admin')
 <link rel="stylesheet" type="text/css" href="{{ url('/css/emailindex.css') }}" />
 
 @section('conteudo')
