@@ -15,20 +15,25 @@
         <img class="svg" src="{{ url('/img/Logomarca - Best Places.svg') }}"></img>
         <div class="sidebar">
     <nav id="sidebar">
+            <div class="grow">
             <a href="{{route('email.create')}}">Criar mensagens</a>
-            <br>
+            </div>
+            <div class="grow">
             <a href="{{route('email.index')}}">Verificar mensagens criadas</a>
-
+            </div>
             <li>
+                <div class="grow">
                 <a href="{{route('email.toSend')}}">
-                    <i class="fas fa-envelope-open-text"></i> Enviar Emails</a>
+                    <i class="fas fa-envelope-open-text"></i> Enviar Emails</a></div>
             </li>
 
             <li>
+                <div class="grow">
                 <a class="" href="{{ route('logout') }}"
                    onclick="event.preventDefault();document.getElementById('logout-form').submit();">
                     <i class="fas fa-sign-out-alt"></i> Sair
                 </a>
+                </div>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     @csrf
                 </form>
@@ -37,7 +42,7 @@
 </div>
 
 
-    </div>
+</div>
 @yield('conteudo')
 </body>
 

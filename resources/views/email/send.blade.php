@@ -2,18 +2,20 @@
 <link rel="stylesheet" type="text/css" href="{{ url('/css/sendmail.css') }}" />
 
 @section('conteudo')
+    <div class="conteudo">
     <div class="container">
-        <div class="title">Emails</div>
+        <div class="container-content">
+        <div class="title nexa-bold">Emails</div>
         <form method="POST" action="{{route('email.sendMail')}}" id="formulario">
             <input type="hidden" id="tipo_email" value="">
         <table class="table">
             <thead>
 
             <tr>
-                <th scope="col">#</th>
-                <th scope="col">Título</th>
-                <th scope="col">Corpo</th>
-                <th scope="col">Ação</th>
+                <th class="nexa-light" scope="col">#</th>
+                <th class="nexa-light" scope="col">Título</th>
+                <th class="nexa-light" scope="col">Corpo</th>
+                <th class="nexa-light" scope="col">Ação</th>
             </tr>
             </thead>
             <tbody>
@@ -89,6 +91,8 @@
         </form>
 
     </div>
+    </div>
+</div>
 
 
 <script>

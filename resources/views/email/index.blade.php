@@ -12,16 +12,16 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="">
-                    <div class="title">{{ __('Emails') }}</div>
+                    <div class="title nexa-bold">{{ __('Emails') }}</div>
                     <div class="">
                         <table class="table">
                             <thead>
                             <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Título</th>
-                                <th scope="col">Corpo</th>
-                                <th scope="col">Anexo?</th>
-                                <th scope="col">Ações</th>
+                                <th class="nexa-light" scope="col">#</th>
+                                <th class="nexa-light" scope="col">Título</th>
+                                <th class="nexa-light" scope="col">Corpo</th>
+                                <th class="nexa-light" scope="col">Anexo?</th>
+                                <th class="nexa-light" scope="col">Ações</th>
                             </tr>
                             </thead>
                             <tbody>
