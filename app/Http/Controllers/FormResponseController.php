@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\FormResponse;
+use Exception;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -29,13 +30,7 @@ class FormResponseController extends Controller{
     }
 
     public function Store(Request $request){
-        $this->validator($request->all())->validate();
-        $FormResponse = new FormResponse();
-        $FormResponse->nome = $request->nome;
-        $FormResponse->email = $request->email;
-        $FormResponse->telefone = $request->telefone;
-        $FormResponse->plano = $request->plano;
-        $FormResponse->save();
+
         $dados=$request->all();
         $pos = strpos($dados['nome'], ' ');
         $fullName = $dados['nome'];
@@ -65,6 +60,18 @@ class FormResponseController extends Controller{
         ->subject('BestPlaces | Contato ');
         $message->from('rafa.senna.benatti2@gmail.com','BestPlaces');
         });
-        return redirect('/admin');
+        try{
+        $FormResponse = new FormResponse();
+        $FormResponse->nome = $request->nome;
+        $FormResponse->email = $request->email;
+        $FormResponse->telefone = $request->telefone;
+        $FormResponse->plano = $request->plano;
+        $FormResponse->save();
+        }catch(Exception $exception){
+
+        } finally{
+            return redirect('/success');
+        }
+
     }
 }

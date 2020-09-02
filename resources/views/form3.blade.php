@@ -9,7 +9,8 @@
     <link rel="stylesheet" type="text/css" href="{{ url('css/main.css') }}" />
 </head>
 <body class="form3-body">
-    <form action="/enviaEmail">
+    <form method="POST" action="/enviaEmail/create">
+        @csrf
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -59,9 +60,9 @@
                 <div class="col-9">
 
                 </div>
-                <a href="/enviaEmail" class="col-3">
-                    <button href="/enviaEmail" type="submit" class="btn btn-normal first transform btn-modal mobile-form">Enviar</button>
-                </a>
+                <div class="col-3">
+                    <button type="submit" class="btn btn-normal first transform btn-modal mobile-form">Enviar</button>
+                </div>
             </div>
         </div>
         <div class="form-background">

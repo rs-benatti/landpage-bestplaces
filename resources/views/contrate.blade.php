@@ -24,8 +24,11 @@
                                       <input type="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" required autocomplete="email" id="InputEmail" name="email" placeholder="exemplo@seuemail.com">
                                       @error('email')
                                       <span class="invalid-feedback" role="alert">
-                                          <strong>Oi</strong>
+                                          <strong>Email já cadastrado</strong>
                                       </span>
+                                      <script>
+                                        $('#exampleModal').modal('toggle');
+                                      </script>
                                   @enderror
                                 </div>
                               </div>
@@ -295,7 +298,21 @@
             </a>
         </div>
       </div>
-      <script>
-
-      </script>
+      <div class="footer">
+        <div class="contratar-footer">
+            <a class="anchor-footer" href="/contrate">
+                Contratar nosso serviço
+            </a>
+        </div>
+        <div class="contratar-footer">
+            <a class="anchor-footer" href="/suporte">
+                Fale conosco
+            </a>
+        </div>
+        <div class="copy-footer">
+            <p>
+                © 2020 Best Places - ROCHA & LAVIGNE MARKETING LTDA., CNPJ 35.129.745/0001-30, Rua Turcides De Moraes, 58, Edif Casa De Barro Loja 08 Anexo Ii, Centro, Conceicao Do Jacuipe, BA, CEP 44245-000, Brasil
+            </p>
+        </div>
+      </div>
 @endsection
