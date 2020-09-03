@@ -1,8 +1,10 @@
-<p>{{ $data['body'] }}{{ $data['plano']}}.</p>
+@component('mail::message')
 
-<p>Número para contato: {{$data['number']}}.</p>
+# {{ $detalhes['body'] }} {{ $detalhes['plano']}}.
+
+<p>Número para contato: {{$detalhes['number']}}.</p>
 
 <p>Atenciosamente,</p>
-{{$data['fullName']}}
-
+{{$detalhes['fullName']}}
+@endcomponent
 
