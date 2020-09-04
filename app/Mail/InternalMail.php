@@ -29,8 +29,6 @@ class InternalMail extends Mailable
      */
     public function build()
     {
-        return $this->from('rafa.senna.benatti2@gmail.com','BestPlaces')
-        ->subject('Nova solicitação de site')
-        ->view('emails.mail')->with('data', $this->details);
+        return $this->markdown('emails.mail',['detalhes'=> $this->details])->from('contato@sitedabp.com.br','Best Places')->subject('Nova solicitação de site');
     }
 }

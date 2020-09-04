@@ -1,6 +1,8 @@
-<p>Olá,</p>
+@component('mail::message')
+# Olá {{$name}}
 
-<p>Recebemos sua mensagem e entraremos em contato com mais detalhes em, no máximo, 72h.</p>
+<p>Recebemos sua mensagem e entraremos em contato com mais detalhes dentro de 72 horas.</p>
 
-<p>Atenciosamente,</p>
+<p>Atenciosamente,</p><br>
 BestPlaces.
+@endcomponent

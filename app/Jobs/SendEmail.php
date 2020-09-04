@@ -33,7 +33,7 @@ class SendEmail implements ShouldQueue
      */
     public function handle()
     {
-        $email = new EmailForQueuing();
+        $email = new EmailForQueuing($this->details['fullName']);
         $internalEmail = new InternalMail($this->details);
         Mail::to($this->details['email'])->send($email);
         Mail::to($this->details['our_mail'])->send($internalEmail);
