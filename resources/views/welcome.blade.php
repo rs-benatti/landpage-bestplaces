@@ -21,12 +21,12 @@
       <div class="d-none d-lg-block">
       <div class="container">
           <div class="row">
-              <div class="col-4">
-                <img src="{{ url('/img/Imagem 2.png') }}" width=100%>
+              <div class="col-4 flex-center">
+                <img src="{{ url('/img/Imagem 2.png') }}" width=75%>
               </div>
-              <div class="col-8">
-                    <p class="textoVerde" style="font-size: 2.5em; margin-left: 50px; margin-top: -10px;">
-                        <a class="btn-flip" data-back="Hoje a compra online é preferência para 74% dos consumidores brasileiros. O seu negócio na internet, com um site profissional, vai fazer suas vendas e seu alcance voarem!" data-front="Alcance pessoas
+              <div class="col-8 marginRight">
+                    <p class="textoVerde" style="font-size: 2em; margin-left: 50px; margin-top: -10px;">
+                        <a class="btn-flip after-margin" data-back="Hoje a compra online é preferência para 74% dos consumidores brasileiros. O seu negócio na internet, com um site profissional, vai fazer suas vendas e seu alcance voarem!" data-front="Alcance pessoas
 onde elas
 estiverem!"></a>
                     </p>
@@ -36,23 +36,23 @@ estiverem!"></a>
                   </div>
               </div>
           </div>
-          <div class="row" style="margin-top: 200px;">
-              <div class="col-8">
-                  <p class="textoVerde" style="font-size: 2.5em; margin-left: 50px; color: #1055A9; text-align: right;">
-                    <a class="btn-flip esquerda" data-back="Garanta que seus clientes saibam que agora seu negócio se renovou, está de cara nova. Compartilhe seu novo site com seus clientes e com quem ainda não é seu cliente!" data-front="Comunique-se
+          <div class="row" style="margin-top: 100px;">
+              <div class="col-8 ">
+                  <p class="textoVerde" style="font-size: 2em; margin-left: 50px; color: #1055A9; text-align: right;">
+                    <a class="btn-flip esquerda marginLeft" data-back="Garanta que seus clientes saibam que agora seu negócio se renovou, está de cara nova. Compartilhe seu novo site com seus clientes e com quem ainda não é seu cliente!" data-front="Comunique-se
 com seus clientes!"></a>
                   </p>
               </div>
-              <div class="col-4">
-                <img src="{{ url('/img/Imagem 3.png') }}" width=100%>
+              <div class="col-4 flex-center">
+                <img src="{{ url('/img/Imagem 3.png') }}" width=75%>
               </div>
           </div>
-          <div class="row" style="margin-top: 200px;">
-            <div class="col-4">
-                <img src="{{ url('/img/Imagem 4.png') }}" width=100%>
+          <div class="row" style="margin-top: 0px;">
+            <div class="col-4 flex-center">
+                <img src="{{ url('/img/Imagem 4.png') }}" width=75%>
             </div>
-            <div class="col-8">
-                <p class="textoVerde" style="font-size: 2.5em; margin-left: 50px; text-align: left;">
+            <div class="col-8 marginRight">
+                <p class="textoVerde" style="font-size: 2em; margin-left: 50px; text-align: left;">
                     <a class="btn-flip tituloPequeno" data-back="Os seus clientes vão procurar o teu negócio na internet e
                     vão encontrar. Quem ainda não o conhece, vai pesquisar
                     algo relacionado e vai te encontrar. E para isso, ter um site
@@ -68,24 +68,24 @@ encontrado!"></a>
               </div>
             </div>
           </div>
-          <div class="row" style="margin-top: 200px;">
+          <div class="row" style="margin-top: 100px;">
             <div class="col-8">
-                <p class="textoVerde" style="font-size: 2.5em; margin-left: 50px; color: #1055A9; text-align: right;">
+                <p class="textoVerde" style="font-size: 2em; margin-left: 50px; color: #1055A9; text-align: right;">
                   <a class="btn-flip esquerda textoPequeno" data-back="Mantenha seus clientes sempre atualizados. Tenha um
                   espaço para atualização diária do seu negócio!" data-front="Mostre novidades
 e lançamentos"></a>
                 </p>
             </div>
-            <div class="col-4">
-              <img src="{{ url('/img/Imagem 5.png') }}" width=100%>
+            <div class="col-4 flex-center">
+              <img src="{{ url('/img/Imagem 5.png') }}" width=75%>
             </div>
           </div>
-          <div class="row" style="margin-top: 200px;">
-            <div class="col-4">
-                <img src="{{ url('/img/Imagem 6.png') }}" width=100%>
+          <div class="row" style="margin-top: 100px;">
+            <div class="col-4 flex-center">
+                <img src="{{ url('/img/Imagem 6.png') }}" width=75%>
             </div>
-            <div class="col-8">
-                <p class="textoVerde" style="font-size: 2.5em; margin-left: 50px; text-align: left;">
+            <div class="col-8 marginRight">
+                <p class="textoVerde" style="font-size: 2em; margin-left: 50px; margin-top: -20px; text-align: left;">
                     <a class="btn-flip textoQuebrado" data-back="Tudo passa a acontecer em um lugar só,
 em seu novo site.
 Não é mais necessário:
@@ -100,9 +100,9 @@ seus clientes"></a>
                 </p>
             </div>
           </div>
-          <div class="row" style="margin-top: 200px;">
+          <div class="row" style="margin-top: 100px;">
             <div class="col-8">
-                <p class="textoVerde" style="font-size: 2.5em; margin-left: 50px; color: #1055A9; text-align: right;">
+                <p class="textoVerde" style="font-size: 2em; margin-left: 50px; color: #1055A9; text-align: right;">
                   <a class="btn-flip esquerda textoQuebrado" data-back="Coloque no ar todos os produtos/serviços que você
 vende, gerando uma experiência incrível para o seu
 cliente! Com apenas 1 clique, ele poderá selecionar
@@ -113,8 +113,8 @@ uma compra. Selecione seus itens e clique em finalizar:" data-front="Deixe as ve
 acontecerem no automático"></a>
                 </p>
             </div>
-            <div class="col-4">
-              <img src="{{ url('/img/Imagem 7.png') }}" width=100%>
+            <div class="col-4 flex-center">
+              <img src="{{ url('/img/Imagem 7.png') }}" width=75%>
             </div>
           </div>
       </div>
