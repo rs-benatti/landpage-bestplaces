@@ -785,19 +785,19 @@ nav{
 
   .div-card-btn{
     margin: auto;
-    display: grid;
+    /*display: grid;
     grid-gap: 4%;
     grid-template-columns: 48% 48%;
-    grid-template-areas: 'first-card-btn second-card-btn';
+    grid-template-areas: 'first-card-btn second-card-btn';*/
   }
 
-  .first-card-btn{
-    grid-area: first-card-btn;
-  }
+  /*.first-card-btn{
+    grid-area: first-card-btn / span 2;
+  }*/
 
-  .second-card-btn{
+ /* .second-card-btn{
     grid-area: second-card-btn;
-  }
+  }*/
 
   .background3{
     background-image: url("../img/Imagem 9.png");
