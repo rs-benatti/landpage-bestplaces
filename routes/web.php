@@ -35,9 +35,9 @@ Route::get('/contatoWhatsApp', 'ContatoController@Contato');
 
 Route::get('/contatoPlanos', 'ContatoController@Planos');
 
-Route::get('/landpagebasica', function (){
+/*Route::get('/landpagebasica', function (){
     return view('landbasica');
-});
+});*/
 
 Route::get('/form', function(){
     return view('form');
@@ -47,13 +47,13 @@ Route::get('/form3', function(){
     return view('form3');
 });
 
-Route::get('/landpageavancada', function(){
+/*Route::get('/landpageavancada', function(){
     return view('landpageAvancada.landpageavancadawelcome');
 })->name('avancada.index');
 
 Route::get('/landpageavancada/contato', function(){
     return view('landpageAvancada.landpageavancadacontato');
-});
+});*/
 
 Route::get('/landpageavancada/sobrenos', function(){
     return view('landpageAvancada.landpageavancadasobrenos');
@@ -64,7 +64,7 @@ Route::get('/success', function(){
 });
 
 
-Route::get('/landpageavancada/blog', function(){
+/*Route::get('/landpageavancada/blog', function(){
     return view('landpageAvancada.landpageavancadablog');
 });
 
@@ -74,7 +74,7 @@ Route::get('/landpageavancada/cardapio', function(){
 
 Route::get('/landpageintermediaria', function(){
     return view('landpageintermediaria');
-});
+});*/
 
 Route::get('/admin', 'AdminController@index')->middleware('auth');
 

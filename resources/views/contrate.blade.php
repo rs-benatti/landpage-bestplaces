@@ -95,18 +95,9 @@
                           de sua empresa</blockquote></div>
 
                       <div class="div-card-btn btn-normal">
-                        <div class="first-card-btn">
-                            <a href="/landpagebasica">
-                                <button class="btn-visu first transform" type="button" style="background-color: transparent !important;">
-                                    Visualizar
-                                </button>
-                            </a>
-                        </div>
-                        <div class="second-card-btn">
                             <button class="btn btn-normal first card-btn btn-normal" type="button" data-toggle="modal" data-target="#exampleModal" style="border-color: #1a1a1a;">
                                 Contratar
                             </button>
-                        </div>
                       </div>
                     </div>
                 </div>
@@ -138,18 +129,9 @@
                             Até 5 páginas
                         </p>
                       <div class="div-card-btn btn-normal" style="margin-top: 30px">
-                        <div class="first-card-btn">
-                            <a href="/landpageintermediaria">
-                                <button class="btn-visu first transform" type="button" style="background-color: transparent !important;">
-                                    Visualizar
-                                </button>
-                            </a>
-                        </div>
-                        <div class="second-card-btn">
                             <button class="btn btn-normal first card-btn btn-normal" type="button" data-toggle="modal" data-target="#exampleModal" style="border-color: #1a1a1a; background-image: linear-gradient(to right, #0569e2, #12519E);">
                                 Contratar
                             </button>
-                        </div>
                       </div>
                     </div>
                 </div>
@@ -183,18 +165,9 @@
                             Até 10 páginas
                         </p>
                       <div class="div-card-btn btn-normal"  style="margin-top: 30px">
-                        <div class="first-card-btn">
-                            <a href="/landpageavancada">
-                                <button class="btn-visu first transform" type="button" style="background-color: transparent !important;">
-                                    Visualizar
-                                </button>
-                            </a>
-                        </div>
-                        <div class="second-card-btn">
-                            <button class="btn btn-normal first card-btn btn-normal" type="button" data-toggle="modal" data-target="#exampleModal" style="border-color: #1a1a1a; background-image: linear-gradient(to right, #fff, #fff); color:#0569e2;">
-                                Contratar
-                            </button>
-                        </div>
+                        <button class="btn btn-normal first card-btn btn-normal" type="button" data-toggle="modal" data-target="#exampleModal" style="border-color: #1a1a1a; background-image: linear-gradient(to right, #fff, #fff); color:#0569e2;">
+                            Contratar
+                        </button>
                       </div>
                     </div>
                 </div>
@@ -206,7 +179,7 @@
         <div class="card container" style="width: 70%; border-radius: 30px;">
             <div class="card-body" style="width: 100%;">
               <h1 class="textoVerde" style="font-size: 3.5em">Landing Page</h1>
-              <h1 class="textoVerde" style="font-size: 3.5em">R$<span class="cortado">750</span> 679,00</h1>
+              <h1 class="textoVerde" style="font-size: 3.5em">R$679,00</h1>
               <a class="card-subtitle mb-2" style="color: #fff;">Para pequenas empresas que estão
                 visando captar leads e se apresentar no mercado</a>
 
@@ -218,13 +191,6 @@
                 <div class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check verde.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">
                     Canal de vendas para seu cliente</blockquote></div>
               <div class="div-card-btn btn-normal">
-                <div class="first-card-btn">
-                    <a href="/landpagebasica">
-                        <button class="btn-visu first transform" type="button" style="background-color: transparent !important;">
-                            Visualizar
-                        </button>
-                    </a>
-                </div>
                 <div class="second-card-btn">
                     <a href="/form3">
                     <button class="btn btn-normal first card-btn btn-normal" type="button" style="border-color: #1a1a1a;">
@@ -260,13 +226,6 @@
                 <div class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check azul.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">
                     Até 5 páginas</blockquote></div>
               <div class="div-card-btn btn-normal">
-                <div class="first-card-btn">
-                    <a href="/landpageintermediaria">
-                        <button class="btn-visu first transform" type="button" style="background-color: transparent !important;">
-                            Visualizar
-                        </button>
-                    </a>
-                </div>
                 <div class="second-card-btn">
                     <a href="/form3">
                     <button class="btn btn-normal first card-btn btn-normal" type="button" style="border-color: #1a1a1a; background-image: linear-gradient(to right, #0569e2, #12519E);">
@@ -304,13 +263,6 @@
                 <div class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">
                     Até 10 páginas</blockquote></div>
               <div class="div-card-btn btn-normal">
-                <div class="first-card-btn">
-                    <a href="/landpageavancada">
-                        <button class="btn-visu first transform" type="button" style="background-color: transparent !important;">
-                            Visualizar
-                        </button>
-                    </a>
-                </div>
                 <div class="second-card-btn">
                     <a href="/form3">
                         <button class="btn btn-normal first card-btn btn-normal" type="button" style="border-color: #1a1a1a; background-image: linear-gradient(to right, #fff, #fff); color:#0569e2;">
