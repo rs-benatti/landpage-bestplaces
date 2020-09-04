@@ -72,7 +72,7 @@
                 <div class="back-title reverse">
                     PLANO ODONTOLÓGICO
                 </div>
-                <div class="back-body reverse">
+                <div class="back-body reverse reduced-font-size">
                     Além de manter a saúde da
                     boca, ter um plano odontológico
                     também ajuda a manter te

@@ -83,14 +83,17 @@
             <div class="col-4">
                 <div class="card" style="width: 100%; border-radius: 10px;">
                     <div class="card-body" style="width: 100%;">
-                      <h1 class="textoVerde" style="font-size: 2.5em">Iniciante</h1>
-                      <h1 class="textoVerde" style="font-size: 2.5em">R$<span class="cortado">500</span> 400</h1>
+                      <h1 class="textoVerde" style="font-size: 2.5em">Landing Page</h1>
+                      <h1 class="textoVerde" style="font-size: 2.5em">R$679,00</h1>
                       <a class="card-subtitle mb-2" style="color: #fff;">Para pequenas empresas que estão
                         visando captar leads e se apresentar no mercado</a>
                         <p class="card-text" style="padding-top: 10px;"><img class="img-check" src="{{ url('/img/check verde.svg') }}"  width="40" height="40" align="left"/>Apresentação de sua empresa</p>
-                        <p class="card-text"><img src="{{ url('/img/check verde.svg') }}"  width="40" height="40" align="left"/>Coleta de e-mails de clientes para seu banco de dados</p>
+                        <p class="card-text"><img src="{{ url('/img/check verde.svg') }}"  width="40" height="40" align="left"/>Coleta de e-mails de clientes</p>
+                        <p class="card-text"><img src="{{ url('/img/check verde.svg') }}"  width="40" height="40" align="left" style="margin-top: -7px"/>Barra de navegação</p>
+                        <p class="card-text"><img src="{{ url('/img/check verde.svg') }}"  width="40" height="40" align="left" ="margin-top: -7px"/>Canal de vendas para seu cliente</p>
                         <div class="card-text"><img src="{{ url('/img/check verde.svg') }}"  width="40" height="40" align="left"/><blockquote class="blockquote-text">Espaço para cardápio/catálogo
                           de sua empresa</blockquote></div>
+
                       <div class="div-card-btn btn-normal">
                         <div class="first-card-btn">
                             <a href="/landpagebasica">
@@ -111,19 +114,29 @@
             <div class="col-4">
                 <div class="card" style="width: 100%; border-radius: 10px;">
                     <div class="card-body" style="width: 100%;">
-                      <h1 class="textoAzul" style="font-size: 2.5em">Intermediário</h1>
-                      <h1 class="textoAzul" style="font-size: 2.5em">R$<span class="cortado">700</span> 600</h1>
+                      <h1 class="textoAzul" style="font-size: 2.5em">Site intermediário</h1>
+                      <h1 class="textoAzul" style="font-size: 2.5em">R$1500,00</h1>
                       <a class="card-subtitle mb-2" style="color: #fff;">Para empresas de médio porte que
                         além de captar leads e se apresentar
                         têm a intenção também de vender
                         na internet</a>
                         <p class="card-text" style="padding-top: 10px;"><img class="img-check" src="{{ url('/img/check azul.svg') }}"  width="40" height="40" align="left"/>Apresentação de sua empresa</p>
                         <p class="card-text"><img src="{{ url('/img/check azul.svg') }}"  width="40" height="40" align="left"/>Coleta de e-mails de clientes para seu banco de dados</p>
-                        <div class="card-text"><img src="{{ url('/img/check azul.svg') }}"  width="40" height="40" align="left"/><blockquote class="blockquote-text">Espaço para cardápio/catálogo
-                          de sua empresa</blockquote></div>
-                        <p class="card-text"><img src="{{ url('/img/check azul.svg') }}"  width="40" height="40" align="left"/>Envio automático de e-mails com promoções relâmpago</p>
+                        <p class="card-text"><img src="{{ url('/img/check azul.svg') }}" class="img-check" width="40" height="40" align="left"/>
+                           Barra de navegação
+                        </p>
                         <p class="card-text"><img src="{{ url('/img/check azul.svg') }}" class="img-check" width="40" height="40" align="left"/>Canal de vendas para o seu
-                        cliente</p>
+                            cliente</p>
+                            <div class="card-text"><img src="{{ url('/img/check azul.svg') }}"  width="40" height="40" align="left"/><blockquote class="blockquote-text">Cardápio/catálogo interativo
+                                de sua empresa</blockquote></div>
+                        <p class="card-text"><img src="{{ url('/img/check azul.svg') }}"  width="40" height="40" align="left"/>Envio automático de e-mails com promoções relâmpago</p>
+
+                        <p class="card-text"><img src="{{ url('/img/check azul.svg') }}" class="img-check" width="40" height="40" align="left"/>
+                            Seção de administrador
+                        </p>
+                        <p class="card-text"><img src="{{ url('/img/check azul.svg') }}" class="img-check" width="40" height="40" align="left"/>
+                            Até 5 páginas
+                        </p>
                       <div class="div-card-btn btn-normal" style="margin-top: 30px">
                         <div class="first-card-btn">
                             <a href="/landpageintermediaria">
@@ -144,23 +157,31 @@
             <div class="col-4">
                 <div class="card" style="width: 100%; border-radius: 10px; background-image: linear-gradient(to bottom, #0569e2, rgb(13, 51, 99));">
                     <div class="card-body" style="width: 100%;">
-                      <h1 class="textoAzul" style="font-size: 2.5em; color: #fff;">Avançado</h1>
-                      <h1 class="textoAzul" style="font-size: 2.5em;  color: #fff;">R$<span class="cortado">850</span> 750</h1>
+                      <h1 class="textoAzul" style="font-size: 2.5em; color: #fff;">Site avançado</h1>
+                      <h1 class="textoAzul" style="font-size: 2.5em;  color: #fff;">R$2500,00</h1>
                       <a class="card-subtitle mb-2" style="color: #fff;">Para empresas grandes que querem
                         ir além e entregar um maior conforto
                         e comodidade para seus clientes a
                         fim de fidelizá-los</a>
                         <p class="card-text" style="padding-top: 10px;"><img class="img-check" src="{{ url('/img/check branco.svg') }}"  width="40" height="40" align="left"/>Apresentação de sua empresa</p>
                         <p class="card-text"><img src="{{ url('/img/check branco.svg') }}"  width="40" height="40" align="left"/>Coleta de e-mails de clientes para seu banco de dados</p>
-                        <div class="card-text"><img src="{{ url('/img/check branco.svg') }}"  width="40" height="40" align="left"/><blockquote class="blockquote-text">Espaço para cardápio/catálogo
-                        de sua empresa</blockquote></div>
+                        <p class="card-text"><img src="{{ url('/img/check branco.svg') }}" class="img-check" width="40" height="40" align="left"/>
+                           Barra de navegação
+                        </p>
+                        <p class="card-text"><img src="{{ url('/img/check branco.svg') }}" class="img-check" width="40" height="40" align="left"/>Canal de vendas para o seu
+                            cliente</p>
+                            <div class="card-text"><img src="{{ url('/img/check branco.svg') }}"  width="40" height="40" align="left"/><blockquote class="blockquote-text">Cardápio/catálogo interativo
+                                de sua empresa</blockquote></div>
                         <p class="card-text"><img src="{{ url('/img/check branco.svg') }}"  width="40" height="40" align="left"/>Envio automático de e-mails com promoções relâmpago</p>
-                        <p class="card-text"><img class="img-check" src="{{ url('/img/check branco.svg') }}"  width="40" height="40" align="left"/>Canal de vendas para o seu
-                        cliente</p>
+
+                        <p class="card-text"><img src="{{ url('/img/check branco.svg') }}" class="img-check" width="40" height="40" align="left"/>
+                            Seção de administrador
+                        </p>
                         <div class="card-text" style="margin-top: 20px;"><img class="img-check" src="{{ url('/img/check branco.svg') }}"  width="40" height="40" align="left" /><blockquote class="blockquote-text">Blog</blockquote></div>
-                        <div class="card-text" style="margin-top: 20px;"><img class="img-check" src="{{ url('/img/check branco.svg') }}"  width="40" height="40" align="left" /><blockquote class="blockquote-text">Barra de navegação</blockquote></div>
-                        <div class="card-text" style="margin-top: 20px;"><img class="img-check" src="{{ url('/img/check branco.svg') }}"  width="40" height="40" align="left" /><blockquote class="blockquote-text">Portfólio</blockquote></div>
-                        <div class="card-text" style="margin-top: 20px;"><img class="img-check" src="{{ url('/img/check branco.svg') }}"  width="40" height="40" align="left" /><blockquote class="blockquote-text">Suporte</blockquote></div>
+                        <div class="card-text" style="margin-top: 20px;"><img class="img-check" src="{{ url('/img/check branco.svg') }}"  width="40" height="40" align="left" /><blockquote class="blockquote-text">Faz o SEO do Google</blockquote></div>
+                        <p class="card-text"><img src="{{ url('/img/check branco.svg') }}" class="img-check" width="40" height="40" align="left"/>
+                            Até 10 páginas
+                        </p>
                       <div class="div-card-btn btn-normal"  style="margin-top: 30px">
                         <div class="first-card-btn">
                             <a href="/landpageavancada">
@@ -184,15 +205,18 @@
       <div class="d-block d-sm-block d-md-block d-xl-none">
         <div class="card container" style="width: 70%; border-radius: 30px;">
             <div class="card-body" style="width: 100%;">
-              <h1 class="textoVerde" style="font-size: 3.5em">Iniciante</h1>
-              <h1 class="textoVerde" style="font-size: 3.5em">R$<span class="cortado">500</span> 400</h1>
+              <h1 class="textoVerde" style="font-size: 3.5em">Landing Page</h1>
+              <h1 class="textoVerde" style="font-size: 3.5em">R$<span class="cortado">750</span> 679,00</h1>
               <a class="card-subtitle mb-2" style="color: #fff;">Para pequenas empresas que estão
                 visando captar leads e se apresentar no mercado</a>
 
               <p class="card-text" style="padding-top: 10px;"><img src="{{ url('/img/check verde.svg') }}"  width="100" height="100" align="left"/>Apresentação de sua empresa</p>
-              <p class="card-text"><img src="{{ url('/img/check verde.svg') }}"  width="100" height="100" align="left"/>Coleta de e-mails de clientes para seu banco de dados</p>
-              <div class="card-text"><img src="{{ url('/img/check verde.svg') }}"  width="100" height="100" align="left"/><blockquote class="blockquote-text">Espaço para cardápio/catálogo
+              <p class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check verde.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/>Coleta de e-mails de clientes</p>
+              <div class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check verde.svg') }}"  width="100" height="100" align="left"/><blockquote class="blockquote-text">Espaço para cardápio/catálogo
                 de sua empresa</blockquote></div>
+                <div class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check verde.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">Barra de navegação</blockquote></div>
+                <div class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check verde.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">
+                    Canal de vendas para seu cliente</blockquote></div>
               <div class="div-card-btn btn-normal">
                 <div class="first-card-btn">
                     <a href="/landpagebasica">
@@ -214,19 +238,27 @@
 
         <div class="card container" style="width: 70%; border-radius: 30px;">
             <div class="card-body" style="width: 100%;">
-              <h1 class="textoAzul" style="font-size: 3.5em">Intermediário</h1>
-              <h1 class="textoAzul" style="font-size: 3.5em">R$<span class="cortado">700</span> 600</h1>
+              <h1 class="textoAzul" style="font-size: 3.5em">Site intermediário</h1>
+              <h1 class="textoAzul" style="font-size: 3.5em">R$1500,00</h1>
               <a class="card-subtitle mb-2" style="color: #fff;">Para empresas de médio porte que
                 além de captar leads e se apresentar
                 têm a intenção também de vender
                 na internet</a>
-              <p class="card-text" style="padding-top: 10px;"><img src="{{ url('/img/check azul.svg') }}"  width="100" height="100" align="left"/>Apresentação de sua empresa</p>
-              <p class="card-text"><img src="{{ url('/img/check azul.svg') }}"  width="100" height="100" align="left"/>Coleta de e-mails de clientes para seu banco de dados</p>
-              <div class="card-text"><img src="{{ url('/img/check azul.svg') }}"  width="100" height="100" align="left"/><blockquote class="blockquote-text">Espaço para cardápio/catálogo
-                de sua empresa</blockquote></div>
-              <p class="card-text"><img src="{{ url('/img/check azul.svg') }}"  width="100" height="100" align="left"/>Envio automático de e-mails com promoções relâmpago</p>
-              <p class="card-text"><img src="{{ url('/img/check azul.svg') }}"  width="100" height="100" align="left"/>Canal de vendas para o seu
-              cliente</p>
+                <p class="card-text" style="padding-top: 10px;"><img src="{{ url('/img/check azul.svg') }}"  width="100" height="100" align="left"/>Apresentação de sua empresa</p>
+                <p class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check azul.svg') }}"  width="100" height="100" align="left"/>Coleta de e-mails de clientes para seu banco de dados</p>
+                <div class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check azul.svg') }}"  width="100" height="100" align="left"/><blockquote class="blockquote-text">Cardápio/catálogo interativo
+                  de sua empresa</blockquote></div>
+                  <div class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check azul.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">Barra de navegação</blockquote></div>
+                  <div class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check azul.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">
+                      Canal de vendas para seu cliente</blockquote></div>
+                <div class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check azul.svg') }}"  width="100" height="100" align="left"/><blockquote class="blockquote-text">
+                  Envio automático de e-mails com promoções relâmpago
+                </blockquote>
+                </div>
+                <div class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check azul.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">
+                    Seção de administrador</blockquote></div>
+                <div class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check azul.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">
+                    Até 5 páginas</blockquote></div>
               <div class="div-card-btn btn-normal">
                 <div class="first-card-btn">
                     <a href="/landpageintermediaria">
@@ -247,23 +279,30 @@
         </div>
         <div class="card container" style="width: 70%; border-radius: 30px; background-image: linear-gradient(to bottom, #0569e2, rgb(13, 51, 99));">
             <div class="card-body" style="width: 100%;">
-              <h1 class="textoAzul" style="font-size: 3.5em; color: #fff;">Avançado</h1>
-              <h1 class="textoAzul" style="font-size: 3.5em;  color: #fff;">R$<span class="cortado">850</span> 750</h1>
+              <h1 class="textoAzul" style="font-size: 3.5em; color: #fff;">Site avançado</h1>
+              <h1 class="textoAzul" style="font-size: 3.5em;  color: #fff;">R$<2500,00</h1>
               <a class="card-subtitle mb-2" style="color: #fff;">Para empresas grandes que querem
                 ir além e entregar um maior conforto
                 e comodidade para seus clientes a
                 fim de fidelizá-los</a>
-              <p class="card-text" style="padding-top: 10px;"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left"/>Apresentação de sua empresa</p>
-              <p class="card-text"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left"/>Coleta de e-mails de clientes para seu banco de dados</p>
-              <div class="card-text"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left"/><blockquote class="blockquote-text">Espaço para cardápio/catálogo
-              de sua empresa</blockquote></div>
-              <p class="card-text"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left"/>Envio automático de e-mails com promoções relâmpago</p>
-              <p class="card-text"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left"/>Canal de vendas para o seu
-              cliente</p>
-              <div class="card-text" style="margin-top: 50px;"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">Blog</blockquote></div>
-              <div class="card-text" style="margin-top: 50px;"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">Barra de navegação</blockquote></div>
-              <div class="card-text" style="margin-top: 50px;"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">Portfólio</blockquote></div>
-              <div class="card-text" style="margin-top: 50px;"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">Suporte</blockquote></div>
+                <p class="card-text" style="padding-top: 10px;"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left"/>Apresentação de sua empresa</p>
+                <p class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left"/>Coleta de e-mails de clientes para seu banco de dados</p>
+                <div class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left"/><blockquote class="blockquote-text">Cardápio/catálogo interativo
+                  de sua empresa</blockquote></div>
+                  <div class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">Barra de navegação</blockquote></div>
+                  <div class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">
+                      Canal de vendas para seu cliente</blockquote></div>
+                <div class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left"/><blockquote class="blockquote-text">
+                  Envio automático de e-mails com promoções relâmpago
+                </blockquote>
+                </div>
+                <div class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">
+                    Seção de administrador</blockquote></div>
+                <div class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">
+                    Blog</blockquote></div>
+                <div Faz o SEO no Google</blockquote></div>
+                <div class="card-text" style="margin-top: 50px"><img src="{{ url('/img/check branco.svg') }}"  width="100" height="100" align="left" style="margin-top: -20px"/><blockquote class="blockquote-text">
+                    Até 10 páginas</blockquote></div>
               <div class="div-card-btn btn-normal">
                 <div class="first-card-btn">
                     <a href="/landpageavancada">

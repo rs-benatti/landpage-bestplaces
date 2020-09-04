@@ -361,7 +361,7 @@ nav{
     margin-top: 70px;
   }
   .esquerda:after {
-    margin-left: -20px;
+    margin-left: 0px;
   }
 
   .btn-texto:before {
@@ -379,12 +379,24 @@ nav{
   }
 
   .textoPequeno:after {
-    margin-top: 130px;
+    margin-top: 100px;
   }
 
   .textoQuebrado:after {
     white-space: pre;
-    margin-top: 20px;
+    margin-top: 0px;
+  }
+
+  .textoQuebrado:before{
+      margin-top: -200px;
+  }
+
+  .marginRight{
+      margin-left: -80px;
+  }
+
+  .marginLeft{
+    margin-right: 100px;
   }
 
   .btn-flip:before {
@@ -399,12 +411,16 @@ nav{
     line-height: 60px;
     content: attr(data-front);
     transform: translateY(0) rotateX(0);
-    margin-top: 110px;
-    font-size: 1.2em;
+    margin-top: 80px;
+    font-size: 1em;
   }
 
   .tituloPequeno:before {
-    margin-top: 140px;
+    margin-top: 180px;
+  }
+
+  .tituloPequeno:after {
+    margin-top: 180px;
   }
 
   .content-404{
@@ -446,7 +462,7 @@ nav{
 }
   .caixaCatalogo {
     height: 500px;
-    width: 1000px;
+    width: 900px;
     background-color: #ffffff;
     border-radius: 20px;
     margin: auto;
@@ -474,7 +490,7 @@ nav{
   }
 
   .catalogoCheck{
-    padding-left: 840px;
+    padding-left: 740px;
     margin-top: -70px;
     position: relative;
   }
@@ -503,7 +519,7 @@ nav{
 
   #cartaoAzul {
     height: 500px;
-    width: 1000px;
+    width: 900px;
     border-radius: 20px;
     margin: auto;
     margin-top: 150px;
@@ -531,7 +547,8 @@ nav{
     font-family: 'Nexa Bold';
     width: 500px;
     height: 200px;
-    background-color: #1a1a1a;
+    background: none;
+    outline: none;
     color: #57c478;
     font-weight: bolder;
     border-width: 0px;
@@ -543,7 +560,11 @@ nav{
 
   .btn-catalogo{
     margin-top: 30px;
-    padding-left: 750px;
+    padding-left: 650px;
+  }
+
+  .after-margin:after{
+      margin-top: 100px !important;
   }
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .content-success{
@@ -833,7 +854,11 @@ nav{
     border-radius: 0px;
   }
 
-
+  .flex-center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
 
   .background4{
     background-image: url("../img/Imagem 10.png");
